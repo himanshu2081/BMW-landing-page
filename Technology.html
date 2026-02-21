@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW Technology</title>
+
+<style>
+
+/* ================= GLOBAL ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:#000;
+    border-bottom:2px solid #00adb5;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#00adb5;
+}
+
+.nav-btn{
+    background:#00adb5;
+    padding:10px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-btn:hover{
+    background:white;
+}
+
+/* ================= TECHNOLOGY SECTION ================= */
+.tech-title{
+    text-align:center;
+    color:#00adb5;
+    margin:40px 0 20px;
+    font-size:32px;
+}
+
+.tech-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:0 40px 40px;
+}
+
+.tech-card{
+    background:#222;
+    width:300px;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 15px #00adb5;
+    transition:0.3s;
+}
+
+.tech-card:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+
+.tech-card h2{
+    color:#00adb5;
+    margin-bottom:12px;
+}
+
+.tech-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:12px;
+}
+
+.tech-card p{
+    color:#ddd;
+    font-size:15px;
+    line-height:1.5;
+}
+.logo img{
+    width:50px;          /* circle size */
+    height:50px;         /* width = height important */
+    border-radius:50%;   /* makes it circle */
+    object-fit:cover;    /* image stretch na ho */
+    border:2px solid #00adb5;  /* optional professional border */
+    padding:3px;         /* thoda space andar */
+    background:white;    /* clean background */
+}
+/* ================= FOOTER ================= */
+footer{
+    background:#000;
+    text-align:center;
+    padding:22px;
+    border-top:2px solid #00adb5;
+    color:#aaa;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .tech-container{
+        padding:20px;
+    }
+
+    .tech-card{
+        width:90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<a href="./BMW landing page.html" class="logo">
+    <img src="./bmw logo.jpg" alt="BMW Logo">
+</a>
+
+<ul class="nav-links">
+    <li><a href="./BMW landing page.html">Home</a></li>
+    <li><a href="./models.html">Models</a></li>
+    <li><a href="./Technology.html">Technology</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+</ul>
+
+<a href="./Booktestdrive.html" class="nav-btn">Book Test Drive</a>
+
+</nav>
+</header>
+
+<section id="technology">
+
+<h1 class="tech-title">Technology</h1>
+
+<div class="tech-container">
+
+<div class="tech-card">
+<h2>Electric Mobility</h2>
+<img src="./Electric mobility.jpeg" alt="Electric Mobility">
+<p>
+Electric mobility delivers a calm driving experience with efficient charging
+and energy recovery systems.
+</p>
+</div>
+
+<div class="tech-card">
+<h2>Driver Assistance</h2>
+<img src="./driver assitance.png" alt="Driver Assistance">
+<p>
+Parking help, lane monitoring, and alerts support safer and more comfortable driving.
+</p>
+</div>
+
+<div class="tech-card">
+<h2>Smart Connectivity</h2>
+<img src="./smart connectivity.jpg" alt="Smart Connectivity">
+<p>
+Touch and voice interaction provide smooth access to navigation,
+entertainment, and communication.
+</p>
+</div>
+
+<div class="tech-card">
+<h2>Performance Engineering</h2>
+<img src="./performance engineering.jpg" alt="Performance Engineering">
+<p>
+Adaptive handling systems balance comfort and precision
+for stable performance.
+</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 | All Rights Reserved by Himanshu Pathak</p>
+</footer>
+
+</body>
+</html>
